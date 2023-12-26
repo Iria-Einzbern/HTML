@@ -1,0 +1,77 @@
+.main{
+    display: flex;
+    flex:1;
+    margin: 20px;
+    padding: 5px;
+}
+
+.home{
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: calc(18px + 0.5%);
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main";
+
+    grid-template-rows: 2.8fr 3fr;
+}
+
+.home-header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    grid-gap: calc(12px + 0.5%);
+    padding-bottom: calc(20px + 0.5%);
+}
+.home-header-aboutme,.home-header-scroll{
+    box-shadow: 1.5px 1.5px 3px 0.5px var(--shadow);
+    background-color: var(--side-background-color);
+    border-radius: 8px;
+}
+    .home-header-scroll{
+
+    }
+    .home-header-aboutme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: calc(15px + 0.3vw);
+    }
+        .aboutme-main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            min-width: 250px;
+            width: 90%;
+            height: 100%;
+            border-style: dashed;
+        }
+            .user-avatar{
+
+                width: 5vw;
+                height: 5vw;
+                border-style: solid 3px black;
+                border-radius: 2.5vw;
+                overflow: hidden;
+            }
+.home-main{
+    grid-area: main;
+    display: grid;
+    grid-gap: calc(18px + 0.5%);
+    grid-template-areas:
+    "main main main main"
+    "main main main main"
+    "main main main main";
+}
+
+
+
+.home-subDiv{
+    box-shadow: 1.5px 1.5px 3px 0.5px var(--shadow);
+    background-color: var(--side-background-color);
+    border-radius: 8px;
+}

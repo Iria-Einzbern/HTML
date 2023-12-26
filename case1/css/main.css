@@ -1,0 +1,117 @@
+@font-face{
+    font-family: 'logo';
+    src: url('../fonts/logo.ttf') format("truetype")
+}
+
+
+#body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: white;
+}
+#top{
+    display: flex;
+    height: 5vw;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(35, 35, 35);
+    z-index: 50;
+    align-items: center;
+    user-select: none;
+}
+#logo{
+    height: 5vw;
+    
+    color:white;
+    font-size: 2.6vw;
+    font-family: 'logo';
+    display: flex;
+    align-items: center;
+}
+#logo a{
+    text-decoration: none;
+    margin-left: 10vw;
+}
+#logo img{
+    height: 4vw;
+}
+
+#flex1{
+    flex:1;
+}
+#links{
+    display: flex;
+    margin-right: 10vw;
+    color: white;
+}
+.toplink{
+    margin-left: 2vw;
+    font-family: 'logo';
+    font-size: 1.2vw;
+}
+.toplink a{
+    color: white;
+    transition: color 0.2s;
+    font-family: 'logo';
+    text-decoration: none;
+}
+.toplink a:hover{
+    color: rgb(150, 150, 150);
+}
+
+
+#bottom{
+    z-index: 30;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+    background-color: black;
+
+   
+    user-select: none;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    color: rgb(150, 150, 150);
+    display: grid;
+    grid-template-columns: repeat(3,45% 10% 45%);
+    font-size: 1vw;
+    font-weight: 200;
+    
+}
+.bottom-row{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.bottom-title{
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+
+#bottom-row3{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    
+    height: 100%;
+    width: 100%;
+}
+.row3{
+    display: flex;
+    flex-direction: column;
+}
+.row3 a{
+    margin-top: 10px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.row3 a:hover{
+    color: white;
+}
+
+#bottom-Divider{
+    border:0.3px solid;
+    height: 100%;
+}

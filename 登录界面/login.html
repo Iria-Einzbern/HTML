@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>登录页</title>
+        <link rel="stylesheet" tpye="text/css" href="./css/login.css">
+        
+    </head>
+    <body style="margin: 0;">
+        <div id="body">
+            <div id="login">
+                <div id="login-title">
+                    Log in
+                </div>
+
+                <div id="login-body">
+                    <form method="post" action="http://127.0.0.1:37423">
+                        <input type="text" placeholder="Username" name="username">
+                        <div id="password">
+                            <input type="password" placeholder="Password" name="password">
+                            <!--可以增加一个显示密码的按钮，按下将密码行的type改成text(已完成)-->
+                            <div id="passwordButton">
+                                👀
+                            </div>
+                        </div>
+                        
+                        
+
+                        <div id="login-tips">
+                            <a href="foggot password">忘记密码?</a>
+                        </div>
+                        <button type="submit">登录</button>
+                    </form>
+                </div>
+                <div style="flex: 1;"></div>
+                <div id="login-info">
+                    登录即代表您同意我们的<a href="agreement">所有协议</a>
+                </div>
+            </div>
+        </div>
+        <script src="./js/showPassword.js"></script>
+    </body>
+</html>

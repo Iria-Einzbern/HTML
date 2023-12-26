@@ -1,0 +1,130 @@
+#center{
+    display: flex;
+    background-color: rgb(244, 244, 244);
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+#main{
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 1px 5px 0 rgba(128, 128, 128, 0.5);
+
+    display: grid;
+    grid-template-rows: 10% 90%;
+    padding-bottom: 5vw;
+}
+#form-title{
+    border-bottom: 0.5px solid rgb(213, 213, 213);
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    font-size: 2.5vw;
+    font-family: 'logo';
+    font-weight: 500;
+}
+#form-main{
+    padding-top: 2vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+#form1,#form2,#form3,#form4{
+    margin-bottom: 4vw;
+}
+#form1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 8%;
+}
+.form1-items{
+    border: 1px solid rgb(170, 170, 170);
+    display: flex;
+    align-items: center;
+    padding:5%
+}
+.form1-items form{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+.form1-items input{
+    border: none;
+    width: 90%;
+    outline: none;
+    font-size: 80%;
+    font-weight: 600;
+    position: relative;
+}
+.textError{
+    position: absolute;
+    transform: translateY(2.2vw);
+    color:red;
+    font-size: 0.8vw;
+}
+
+#form2,#form3{
+    border: 1px solid rgb(170, 170, 170);
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.5vw;
+    user-select: none;
+}
+#form2 form,#form3 form{
+    font-weight: 300;
+    line-height: 3vw;
+    margin-top: 2%;
+    font-size: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1vw
+}
+input[type="checkbox"] {
+    width: 1vw;
+    height: 1vw;
+    min-width: 10px;
+    min-height: 10px;
+  }
+
+#form4{
+    border: 1px solid rgb(170, 170, 170);
+    height: 10vw;
+    display: flex;
+}
+#form4 form{
+    width: 80%;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+    height: 9vw;
+}
+#form4 textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+#submit-button{
+    flex:1;
+    background-color: rgb(0,195,182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.2s;
+    font-size: 2vw;
+    user-select: none;
+}
+#submit-button:hover{
+    background-color: rgb(28, 215, 202);
+}
+
+
+
+
+

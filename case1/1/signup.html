@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>智游云工作室｜后台管理｜用户注册</title>
+        <link rel="stylesheet" tpye="text/css" href="./css/signup.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body style="margin: 0;">
+        <div id="body">
+            <div id="back"><a href="./index.html">返回主页</a></div>
+            <div id="signup">
+
+                <div id="errorTips">
+                    <i class="fa fa-times-circle-o"></i>
+                    <div id="errorTip" style="display: inline-block;">NaN</div>
+                </div>
+                <div id="Tips">
+                    <i class="fa fa-check-circle-o"></i>
+                    <div id="Tip" style="display: inline-block;">NaN</div>
+                </div>
+
+                <div id="signup-title">
+                    Sign up
+                </div>
+
+                <div id="signup-body">
+                    <form method="post">
+
+                        <div id = "infoText">
+                        <input type="text" placeholder="Username" name="username">
+                        <div id="usrnError">*请填写用户名</div>
+
+                        <input type="text" placeholder="Email" name="email">
+                        <div id="emailError">*请正确填写邮箱</div>
+
+
+                        <div id="password">
+                            <input type="password" placeholder="Password" name="password">
+                            <div id="passwordButton">👀</div>
+
+                            <input type="password" placeholder="Confirm Your Password" name="confirmPassword">
+                        </div>
+                        <div id="pwdError">*请正确填写密码(至少八位)</div>
+                        <div id="confirmPwdError">*两次填写的密码不一致</div>
+                        </div>
+
+                        <div id="code">
+                            <div id="backInfo">⬅返回</div>
+                            <input type="text" placeholder="请填写验证码" name="code">
+                            
+                            <div id="codeError">*验证码格式错误</div>
+                            <div id="codeTips">验证码已发送，可能会有延迟，请耐心等待。
+                                <div id="reSendCode" style="display: inline-block;text-decoration: solid;"><i>再次发送</i></div>
+                            </div>
+                            
+                        </div>
+
+                        <button type="submit" id="submit">注册</button>
+                    </form>
+                    <div id="signup-info">
+                        注册即代表您同意我们的<a href="agreement">所有协议</a>
+                    </div>
+                </div>
+
+                <div style="flex: 1;"></div>
+                
+            </div>
+        </div>
+        <script src="./js/signup/showPassword.js"></script>
+        <script src="./js/signup/signup.js"></script>
+    </body>
+</html>

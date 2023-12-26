@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            dragTest
+        </title>
+
+        <style>
+            .dropTarget{
+                width: 200px;
+                height: 100px;
+                border: 1px solid black;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .dropItem{
+                width: 50px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #39c5bb;
+                color: white;
+                border-radius: 10px;
+                border: 1px solid rgb(42, 162, 132);
+                user-select: none;
+            }
+        </style>
+        <script src="./drag.js"></script>
+    </head>
+    <body>
+        <div class="dropTarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="drop1" class="dropItem" draggable="true" ondragstart="drag(event)">拖动1</div>
+            <div id="drop2" class="dropItem" draggable="true" ondragstart="drag(event)">拖动2</div>
+        </div>
+        <div class="dropTarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,158 @@
+
+
+
+#banner{
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vw;
+
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat; 
+    background-position:center;
+    background-size: cover; 
+}
+
+
+
+#center{
+    margin-bottom: 20px;
+    background-color: white;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+#notice{
+    height: 3.3vw;
+    display: flex;
+    align-items: center;
+    padding-left: 0.7px;
+}
+#notice:hover{
+    text-decoration: solid;
+}
+.notices{
+    color: rgb(175, 175, 175);
+    font-size: 0.85vw;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+#AD{
+    display: flex;
+    justify-content: space-between;
+    height: 16vw;
+    min-height: 150px;
+}
+.ADimg img{
+    max-height: 100%;
+}
+#scrollAD{
+    flex:1;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+#ADmain{
+    height: 16vw;
+    position: relative;
+    overflow: hidden;
+}
+#scrollMain{
+    transform: translateY(0);
+    transition: 0.5s;
+}
+#ADchooser{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+#chooser1,#chooser2,#chooser3,#chooser4{
+    flex:1;
+    display: flex;
+    align-items: center;
+    color: rgb(0,195,183);
+    font-size: 2vw;
+}
+#chooser1 i,#chooser2 i,#chooser3 i,#chooser4 i{
+    visibility:hidden;
+}
+.ch-img{
+    background-color: rgb(234, 197, 148);
+    flex:1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.ch-img img{
+    margin: 1%;
+    max-width: 95%;
+    max-height: 100%;
+}
+#main1,#main2,#main3,#main4{
+    display: flex;
+
+}
+#main1 img,#main2 img,#main3 img,#main4 img{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+#slogans{
+    height: 13vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 10px;
+}
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slogan-title{
+    margin-top: 10px;
+    font-size: 3vw;
+    font-family: 'logo';
+    color:rgb(0,153,117)
+}
+.slogan-text{
+    margin-top: 10px;
+    font-size: 1vw;
+    margin-top: 10px;
+}
+
+
+
+#items{
+    margin-top: 1vw;
+    height: 13vw;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item img{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+

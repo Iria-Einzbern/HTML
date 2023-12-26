@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>智游云工作室｜后台管理｜登录页</title>
+        <link rel="stylesheet" tpye="text/css" href="./css/login.css">
+
+    </head>
+    <body style="margin: 0;">
+        <div id="body">
+            <div id="back"><a href="./index.html">返回主页</a></div>
+            <div id="login">
+                <div id="login-title">
+                    Log in
+                </div>
+
+                <div id="login-body">
+                    <form method="post">
+                        <input type="text" placeholder="Username" name="username">
+                        <div id="usrnError">*请填写用户名</div>
+                        <div id="password">
+                            <input type="password" placeholder="Password" name="password">
+                            <!--可以增加一个显示密码的按钮，按下将密码行的type改成text(已完成)-->
+                            <div id="passwordButton">
+                                👀
+                            </div>
+                        </div>
+                        <div id="pwdError">*请填写密码</div>
+                        <div id="login-tips">
+                            <a href="foggot password">忘记密码?</a>
+                        </div>
+                        <button type="submit" id="submit">登录</button>
+                    </form>
+                </div>
+
+                <div style="flex: 1;"></div>
+                <div id="login-info">
+                    登录即代表您同意我们的<a href="agreement">所有协议</a>
+                </div>
+            </div>
+        </div>
+        <script src="./js/login/showPassword.js"></script>
+        <script src="./js/login/login.js"></script>
+        <script src="./js/login/authentication.js"></script>
+    </body>
+</html>

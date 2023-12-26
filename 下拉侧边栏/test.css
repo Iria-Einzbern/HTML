@@ -1,0 +1,62 @@
+#sideBar{
+    padding-top: 5px;
+    min-height: 400px;
+    max-width: 120px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sideBarTest{
+    min-height: 30vw;
+    width: 20vw;
+    background-color: rgb(194, 194, 194);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.subMenu{
+    position: relative;
+    height: 40px;
+    width: 95%;
+    border-bottom: 1px solid black;
+
+    align-items: center;
+    user-select: none;
+    overflow: hidden;
+    transition: 0.3s;
+    z-index: 1;
+}
+.subMenuText:hover{
+    color: white;
+}
+.subMenuText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    z-index: 5;
+    background-color: rgb(218, 221, 69);
+}
+
+.dropMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    min-height: 100%;
+    z-index: 2;
+    opacity: 0.3;
+}
+
+.subDropMenu{
+    height: 30px;
+    width: 100%;
+}
+.subDropMenu:hover{
+    background-color: aqua;
+}

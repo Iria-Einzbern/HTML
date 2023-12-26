@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 隐藏垂直滚动条 */
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+  
+  
+
+
+#body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(240, 240, 240);
+    min-height: 100vh;
+    align-items: center;
+    width: 100%;
+
+    scroll-snap-type: y mandatory; /*按Y轴纵向滚动*/
+    overflow-y: scroll; /*当Y值变化时采取滚动处理*/
+    overflow-x: hidden; /*隐藏横行滚动*/
+    scroll-snap-align: start; /*每次滚动后停在下一页面的开始位置*/
+    
+    
+}
+#wallpaper{
+    width: 100%;
+    height: 100vh;
+
+    
+    background-image: url(./image/wallpaper.jpg);
+    background-repeat: no-repeat; 
+    background-position:center; 
+   
+
+
+    opacity:0.9;
+    transition: 0.3s;
+
+    top: 0;
+    left: 0;
+    position: relative;
+
+
+    /*
+    position: fixed;
+    */
+    
+    
+    
+
+}
+#wallpaper video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#wpSwitchBottom{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(48, 145, 127, 0.554);
+    border-radius: 5px;
+    z-index: 90;
+    position: absolute;
+    top:90vh;
+    left:5vw;
+    display: flex;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+#wpSwitchBottom:hover{
+    background-color: rgba(48, 145, 127, 1);
+    width: 50px;
+    height: 50px;
+}
+
+/*
+#wpSwitchBottomText{
+    visibility: hidden;
+
+}
+
+
+#wpSwitchBottom:hover #wpSwitchBottomText{
+    visibility: visible;
+}
+*/
+
+
+
+
+
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(255, 255, 255,0.4);
+    box-shadow: 5px 5px 20px rgb(217, 217, 217,0);
+    z-index: 100;
+    position: fixed;
+    transition: 0.3s;
+}
+
+#topMain{
+    display: flex;
+    align-items: center;
+    min-width: 60%;
+    height: 100%;
+}
+
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#toplinks{
+    display: flex;
+    height: 100%;
+    
+}
+
+.tlink1,.tlink2,.tlink3,.tlink4,.tlink5{
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition:color 0.3s;
+}
+.dropdown1,.dropdown2,.dropdown3,.dropdown4,.dropdown5{
+    box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.294);
+    position: absolute;
+    z-index: 9;
+    top:100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 80px;
+    height: 150px;
+    left: 50%; /* 与按钮水平居中 */
+    transform:translateX(-50%);
+
+    color: black;
+    border-radius: 0 0 10px 10px;/*设置圆角*/
+
+    visibility: hidden;/*可见性*/
+
+    opacity: 0.1;/*初始透明度设置*/
+    transition:0.3s;
+}
+
+
+.tlink1:hover,.tlink2:hover,.tlink3:hover,.tlink4:hover,.tlink5:hover{
+    color: rgb(48, 145, 128);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.516);
+}
+.tlink1:hover .dropdown1,.tlink2:hover .dropdown2,.tlink3:hover .dropdown3,.tlink4:hover .dropdown4,.tlink5:hover .dropdown5{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.dropdown{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+
+
+
+
+#center{
+    scroll-snap-align: start; /*每次滚动后停在下一页面的开始位置*/
+    
+    margin-bottom: 30px;
+    background-color: white;
+    min-height: 100vw;
+    width: 80%;
+    border-radius: 20px;/*圆角*/
+    box-shadow: 5px 5px 20px rgb(217, 217, 217);
+    z-index: 5;
+
+
+    top:0;
+    transition: top 0.3s;
+    position: relative;
+
+    
+    
+}
+#centerMain{
+    margin-top: 20px;
+    margin-left: 20px;
+
+}

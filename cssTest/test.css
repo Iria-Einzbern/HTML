@@ -1,0 +1,23 @@
+
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+#text{
+    display: flex;
+    justify-content: space-between;
+}
+#line{
+    width: 16%;
+    height: 5px;
+    background-color: black;
+    opacity: 0;
+    transition: 0.3s;
+}
+.block{
+    font-weight: 800;
+    font-size: 6.5vw;
+}

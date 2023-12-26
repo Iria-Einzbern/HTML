@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "mainfont";
+    src: url("../fonts/font1.woff2"); format:("woff2")
+}
+
+
+
+
+#main{
+    font-family: "mainfont";
+    display: flex;
+    flex-direction: column;
+    background-color: white(233, 233, 233);
+    min-height: 100vh;
+    width: 100vw;
+    
+
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    margin-top: 0;
+}
+.navigation{
+    height: 100%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0);
+    align-items: center;
+}
+#logoimg{
+    height: 33px;
+    width: 28px;
+    margin: 15px;
+}
+.toplinks{
+    margin: 30px;
+    color: rgb(194, 194, 194);
+    font-size: small;
+}
+#search{
+    height: auto;
+    width: 22.5px;
+    margin: 15px;
+}
+
+
+
+.center{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+#id1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background-color: black;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.headlineb{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.headlineText{
+    font-size: 70px;
+    font-weight: bolder;
+}
+.intro{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.links a{
+    color: rgb(77, 130, 255);
+    font-size: normal;
+    margin: 15px;
+}
+
+#img1{
+    max-width: 100%; /* 设置最大宽度为父容器的宽度 */
+    height: auto; /* 让图片的高度自适应以保持纵横比 */
+}
+
+
+#id2{
+    margin-top: 10px;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    background-color: rgb(245, 245, 251);
+}
+.headlinew{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+
+#id3{
+    margin-top: 10px;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    background-color: rgb(250, 250, 250);
+}
+
+#another{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列，每列的宽度相等 */
+    grid-template-rows: repeat(2, 1fr); /* 2行，每行的高度相等 */
+    gap: 5px; /* 可选的，用于定义网格项之间的间隔 */
+}
+.anHeadline{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.anheadlineText{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.anIntro{
+    font-weight: light;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.img2{
+
+    max-width: 100%;
+
+}
+
+
+#an1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+}
+
+#an2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#an3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+}
+
+#an4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: rgb(245, 245, 247);
+    color: rgb(120, 120, 120);
+    font-size: small;
+    font-weight: light;
+    align-items: center;
+    
+}
+
+#nav-bottom{
+    max-width: 980px;
+    display: flex;
+    flex:1;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.list-ele{
+    padding-bottom: 5px;
+    font-size: small;
+}
+

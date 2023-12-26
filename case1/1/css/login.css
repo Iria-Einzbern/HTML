@@ -1,0 +1,158 @@
+#body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(185, 216, 228);
+}
+#back{
+    position: absolute;
+    transform: translateY(1vw);
+    background-color: white;
+    box-shadow: 3px 3px 4px rgba(128, 128, 128, 0.371);
+    border-radius: 1vw;
+    padding: 0.5vw 2vw;
+    transition: 0.2s;
+}
+#back:hover{
+    position: absolute;
+    transform: translateY(1vw);
+    background-color: rgb(239, 239, 239);
+    box-shadow: 1.5px 1.5px 3px rgba(128, 128, 128, 0.371);
+    border-radius: 1vw;
+    padding: 0.5vw 2vw;
+}
+#back a{
+    color: rgb(2, 109, 152);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#login{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    padding: 2vw;
+
+    min-width: 400px;
+    width: 50vw;
+    max-width: 600px;
+    min-height: 400px;
+
+    background-color: white;
+
+    border-radius: 1vw;
+    /*圆角*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.371);
+}
+
+#login-title{
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size:45px;
+    font-weight: 900;
+    color:rgb(2, 109, 152);
+}
+#password{
+    width: 100%;
+    position: relative;
+}
+#password input{
+    width: 290px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 42px;
+    border: none;
+    outline: none;
+    background-color: rgb(236, 236, 236);
+    font-size: small;
+    font-weight: 700;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+
+#login-body{
+    width: 300px;
+}
+#login-body form{
+    display: flex;
+    flex-direction: column;
+}
+#login-body input{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 42px;
+    border: none;
+    outline: none;
+    background-color: rgb(236, 236, 236);
+    font-size: small;
+    font-weight: 700;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+#passwordButton{
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    z-index: 10;
+}
+
+#login-body button{
+    margin-top: 40px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(185, 216, 228);
+    box-shadow: 3px 3px 4px rgba(128, 128, 128, 0.371);
+    transition: 0.2s;
+
+    color: rgb(2, 109, 152);
+    font-size: larger;
+    font-weight: 500;
+}
+#login-body button:hover{
+    background-color: rgb(138, 197, 221);
+}
+
+#login-tips a{
+    text-decoration: none;
+    color:rgb(2, 109, 152);
+}
+
+#login-info{
+    color: gainsboro;
+    font-size: smaller;
+}
+#login-info a{
+    color: gainsboro;
+    font-style: italic;
+}
+
+#usrnError{
+    position: absolute;
+    font-size: 12px;
+    transform: translate(200px,25px);
+    visibility: hidden;
+    color: red;
+}
+#pwdError{
+    position: absolute;
+    font-size: 12px;
+    transform: translate(200px,83px);
+    visibility: hidden;
+    color: red;
+}
+
+
+
+#infoText{
+    position: relative;
+}

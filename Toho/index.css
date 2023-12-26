@@ -1,0 +1,251 @@
+@font-face 
+{
+    font-family: 'Capsuula'; /* 字体名称，你可以自定义 */
+    src: url("./font/Capsuula.ttf") format('truetype'); /* 字体文件的路径和格式 */
+}
+@font-face 
+{
+    font-family: 'YuanRou'; /* 字体名称，你可以自定义 */
+    src: url("./font/源柔.ttf") format('truetype'); /* 字体文件的路径和格式 */
+}
+@keyframes fadeIn /*顶栏淡入动画*/
+{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes sideMove /*侧栏右移*/
+{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes topMove /*顶栏下移*/
+{
+    from{
+        transform: translateY(-120px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+
+#logo
+{
+    display: flex;
+    width: auto;
+    align-items: center;
+    
+}
+
+#toptop
+{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    animation: topMove 0.7s ; /* 应用 topMove 动画，持续 1 秒 */
+    z-index: 1000; /* 设置一个较高的 z-index 值 */
+}
+
+#top
+{
+    display: flex;
+    background-color: black;
+    height: 100px;
+    align-items: center;
+    margin: 0; /* 去除顶栏的外边距 */
+    padding: 0; /* 去除顶栏的内边距 */
+}
+
+#top sub
+{
+    display: inline-block;
+    color:white;
+    font-family: 'Capsuula', sans-serif;
+    font-size:larger;
+    align-self:flex-end;
+    padding-bottom: 25px;
+}   
+
+.top-jump/*顶栏跳转链接块*/
+{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'XiChang',sans-serif;
+    margin-left: auto;
+    padding-right: 80px;
+}
+/*顶栏跳转链接元素*/
+.tj-link
+{
+    padding-left: 10px;
+    color: gray;
+}
+.tj-link a{
+    text-decoration: none;
+    color: gray;
+}
+.tj-link::after
+{
+    padding-left: 5px;
+    content: "|"; /* 插入的文本内容 */
+    color: gray;
+}
+/*
+#headline
+{
+    position: absolute;
+    left: 10;
+    top: 10;
+    height: 100;
+    width: 10px;
+    background-color: white;
+
+}
+*/
+
+#body
+{
+    margin-top: 110px;
+    animation: fadeIn 1.5s;
+}
+
+#main
+{
+    display:flex;
+}
+#article 
+{
+    color: #b994cb;
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.vertical-line
+{
+    height: 100;
+    width: 5px;
+    background-color: white;
+    margin-left: 5px;
+}
+
+#side
+{
+    display: flex;
+    background-color: black;
+    width: 100px;
+    height: 100;
+    justify-content: center;
+    padding-top: 10px; /* 为 #side 元素的顶部添加 20px 的内边距 */
+    border-radius: 10px;
+    font-family: 'YuanRou', sans-serif;
+    animation: sideMove 0.7s forwards;
+}
+
+#links
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.link
+{
+    display: flex;
+    width: 90px;
+    height: 50px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.link a
+    {
+        text-decoration: none;
+        color:white;
+        text-align: center;
+    }
+
+
+#botton
+{
+    display: flex;
+    height: 80px;
+    background-color: black;
+    color: gray;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#statement
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Friendly-links
+{
+    display: flex;
+    flex-direction:row;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.Fr-link
+{
+    margin-left: 20px;
+    color:white;
+}
+.Fr-link img
+{
+    height: 40px;
+}
+
+.images
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+}
+.images a
+{
+    color: gray;
+    text-decoration: none;
+}
+
+.list
+{
+    color: rgb(174, 174, 174);
+}
+.list a
+{
+    color: rgb(174, 174, 174);
+    text-decoration: none;
+}
+
+.intro
+{
+    color:rgb(117, 117, 117);
+    font-style: italic;
+    font-size: small;
+}
+
+#主标题
+{
+    font-family: 'YuanRou', sans-serif;
+}
