@@ -7,13 +7,14 @@
     --font-hover:white;
     --button-off:rgb(177, 220, 217);
     --shadow:rgba(150, 150, 150, 0.4);
+    --warn:rgb(248, 98, 98);
 }
 .dark{
     --body-color:rgb(37, 37, 37);
     --side-background-color:black;
     --header-font-color:white;
-    --main-color:white;
-    --font:white;
+    --main-color:rgb(230, 230, 230);
+    --font:rgb(230, 230, 230);
     --font-hover:black;
     --shadow:rgba(66, 66, 66, 0.4);
 }

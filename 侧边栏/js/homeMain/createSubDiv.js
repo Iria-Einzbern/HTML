@@ -16,6 +16,6 @@ function createHSubDiv(num){
     }
 }
 
-createHSubDiv(12);
+createHSubDiv(8);
 
 //在HSubDiv内添加新的子div
