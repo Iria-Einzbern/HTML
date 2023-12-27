@@ -174,7 +174,7 @@ body{
     .selected{
         position: absolute;
         z-index: 50;
-        width: 5px;
+        width: 8px;
         background-color: var(--main-color);
         height: 100%;
 

@@ -32,7 +32,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: calc(15px + 0.3vw);
+            padding: calc(25px + 0.3vw);
         }
             .aboutme-main{
                 display: flex;
@@ -42,15 +42,72 @@
                 min-width: 200px;
                 width: 90%;
                 height: 100%;
+                
             }
-                .user-avatar{
+                .user{
+                    user-select: none;
+                    background-color: var(--body-color);
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 8px;
+                
+                        .user-main{
+                            display: flex;
+                            .user-avatar{
+                                min-width: 60px;
+                                min-height: 60px;
+                                width: 6vw;
+                                height: 6vw;
+                                /* border: 1px solid gray; */
+                                box-shadow: 2px 2px 5px 0px var(--shadow);
+                                border-radius: 100px;
+                                overflow: hidden;
+                                img{
+                                    max-width: 100%;
+                                }
+                            }
+                            .user-ID{
+                                line-height: 100%;
+                                align-self: center;
+                                flex:1;
+                                text-align: center;
+                                color: var(--main-color);
+                            }
+                            
+                        }
+                        .user-signature{
+                            margin-top: 10%;
+                            font-size: calc(5px + 0.5vw);
+                            color: var(--font);
+                            font-style: italic;
+                        }
 
-                    width: 5vw;
-                    height: 5vw;
-                    border-style: solid 3px black;
-                    border-radius: 2.5vw;
-                    overflow: hidden;
                 }
+                .user-data{
+                    margin-top: 8%;
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 8px;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    .udata{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .data-title{
+                            font-size: calc(12px + 10%);
+                            color: var(--font);
+                        }
+                        .data-text{
+                            color: var(--font);
+                            font-size: calc(18px + 10%);
+                            font-weight: 600;
+                        }
+                    }
+                }
+                
+            
+
     .home-main{
         margin-top: calc(50px + 1vh);
         height: 60vw;
