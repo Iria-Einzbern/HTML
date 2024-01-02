@@ -21,16 +21,21 @@ function setCookie(name, value, days) {
 //获取cookie
 function getCookie(name) {
     var nameEQ = name + "=";
+    //将 document.cookie 字符串按照分号分割成数组，得到所有的 Cookie
     var cookies = document.cookie.split(';');
+    //遍历所有Cookie
     for (var i = 0; i < cookies.length; i++) {
         var cookie = cookies[i];
+        //移除 Cookie 值前面可能存在的空格
         while (cookie.charAt(0) === ' ') {
             cookie = cookie.substring(1, cookie.length);
         }
+        //检查前缀，一致则返回cookie的值
         if (cookie.indexOf(nameEQ) === 0) {
             return cookie.substring(nameEQ.length, cookie.length);
         }
     }
+    //无则返回null
     return null;
 }
 
