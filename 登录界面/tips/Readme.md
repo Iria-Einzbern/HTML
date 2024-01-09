@@ -1,3 +1,11 @@
+<!--
+ * @Author: kawaii-poi iria1314@qq.com
+ * @Date: 2024-01-09 20:18:30
+ * @LastEditors: kawaii-poi iria1314@qq.com
+ * @LastEditTime: 2024-01-09 21:08:34
+ * @FilePath: /HTML/登录界面/tips/Readme.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 # 基于js的网页提示窗
 
  ---
@@ -22,4 +30,4 @@
     showTip("这是错误提示窗","error")
     ```
 * ### 实例
-    ![](https://pic.imgdb.cn/item/659d3e8b871b83018a6cc80b.png)
+    ![](./4040474142.png)
