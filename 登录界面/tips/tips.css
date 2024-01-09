@@ -1,0 +1,59 @@
+#tips{
+    z-index: 100;
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    width: calc(120px + 10%);
+    transition: 0.3s ease;
+}
+.tip{
+    position: relative;
+    height: calc(40px + 2.5vw);
+    margin-top: 10px;
+    box-shadow: 1px 1px 15px 0px rgba(145, 145, 145, 0.4);
+    border-radius: 8px;
+    font-size: calc(5px + 0.8vw);
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+    .tip i{
+        font-size: calc(8px + 1vw);
+        padding-left: calc(12px + 5%);
+        width: 20%;
+        
+    }
+    .closeButton{
+        right: 1%;
+        position: absolute;
+        padding: 1%;
+        top:0%;
+        transform: translateY(-20%);
+    }
+        .closeButton i{
+            font-size: calc(1px + 0.8vw);
+            color:rgb(222, 222, 222);
+        }
+    .tip span{
+        flex:1;
+        text-align: center;
+        padding-right: calc(8px + 5%);
+    }
+.errorTip{
+    background-color: rgb(255, 140, 140);
+    color: rgb(196, 0, 0);
+}
+.okTip{
+    background-color: #dff3f1;
+    color: #39c5bb;
+}
+.warnTip{
+    background-color: #fff1bd;
+    color: #9e8f00;
+}
+.tipHidden{
+    opacity: 0;
+}
+.tipMove{
+    transform: translateX(100%);
+}
